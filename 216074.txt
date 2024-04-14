@@ -1,0 +1,81 @@
+Лаб1
+1. Веќе имав креирано профил на Github
+2. Го променив името на мојата главна гранка од main во master
+3. Креирав remote репозиториум на Github
+4. Креирав и локален репозиториум и го инициализирав Git
+$ mkdir SI_2024_lab1_216074
+$ cd SI_2024_lab1_216074
+$ git init
+5. Ги поврзав двата репозиториума и проверив дали е успешно поврзувањето
+$ git remote add origin https://github.com/marijamilevaa/SI_2024_lab1_216074.git
+$ git remote -v 
+6. Додадов README.md датотека и направив commit 
+$ nano README.md 
+Marija Mileva 216074
+$ git add README.md
+$ git commit -m "Initial commit"
+7. Ги превземав трите фајла и направив commit
+$ nano SILab1Main.java
+$ nano SILab1_1.java
+$ nano SILab1_2.java
+$ git add .
+$ git commit -m "Add starter code"
+8. Ги синхронизирав гранките со remote репозиториумот
+$ git push -u origin master
+Ги поправив грешките во SILab1_1 и SILab1_2
+9. Отворив две гранки bug1 и bug2
+$ git branch bug1
+$ git branch bug2
+10. Се префрлив на гранката bug1
+$ git checkout bug1
+11. Ја поправив грешката во методот filterOddLengthStrings и направив commit
+$ git add SILab1_1.java
+$ git commit -m "Fix wrong condition in filterOddLengthStrings"
+12. Се префрлив на гранката bug2
+$ git checkout bug2
+13. Ја поправив грешката во методот makeBigStringFrom и направив commit
+$ git add SILab1_2.java
+$ git commit -m "Fix wrong condition in makeBigStringFrom"
+14. Се вратив на гранката bug1
+$ git checkout bug1
+15. Во класата  SILab1Main во линија 16 додадов повик до статичкиот метод filterOddLengthStrings и направив commit
+$ nano SILab1Main.java
+$ git commit -a -m "Call method filterOddLengthStrings in main class"
+16. Се вратив на гранката bug2
+$ git checkout bug2
+17. Во класата  SILab1Main во линија 16 додадов повик до статичкиот метод makeBigStringFrom и направив commit
+$ nano SILab1Main.java
+$ git commit -a -m "Call method makeBigStringFrom in main class"
+18. Ги синхронизирав гранките со remote репозиториумот
+$ git push origin --all
+19. Се префрлив на гранката master
+$ git checkout master
+20. Ја споив гранката bug1 кон master
+$ git merge bug1
+Не се случи конфликт
+Спојувањето се изврши со Fast Forward
+21. Ги синхронизирав сите гранки со одалечениот репозиториум
+$ git push origin --all
+22. Се префрлив на гранката bug2
+$ git checkout bug2
+23. Направив reabse спрема гранката master 
+$ git rebase master
+Имав конфликт го решив со бришење на методот System.out.println(SILab1_1.filterOddLengthStrings(list));
+$ nano SILab1Main.java
+$ git add SILab1Main.java
+$ git rebase --continue
+24. Се префрлив на гранката master
+$ git checkout master
+25. Ја споив гранката bug2 кон master
+$ git merge bug2
+Нема конфликт 
+Спојувањето се изврши со Fast Forward
+26. Ги синхронизирав сите гранки со одалечениот репозиториум
+$ git push origin --all
+27. За гранката bug2 употребив --force
+$ git push origin bug2 --force
+28. Ги додадов датотеките logs.txt и 216074.txt
+$ nano logs.txt
+$ nano 216074.txt
+29. Ги синхронизирав сите гранки со одалечениот репозиториум
+$ git push origin --all

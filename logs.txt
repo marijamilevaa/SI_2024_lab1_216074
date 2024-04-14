@@ -1,0 +1,22 @@
+commit f3f6810d84a707bc8abff5c93837ea38bc7467c5 (HEAD -> master, origin/master)
+Merge: 02c3c2d 9a39733
+Author: marijamilevaa <marijamilevaa@gmail.com>
+Date:   Sun Apr 14 16:59:18 2024 +0200
+
+    Merge branch 'bug2' of https://github.com/marijamilevaa/SI_2024_lab1_216074
+
+commit 02c3c2ddb913e1c7faa743879e5a4c42865dbefa (origin/bug2, bug2)
+Author: marijamilevaa <marijamilevaa@gmail.com>
+Date:   Sat Apr 13 14:21:31 2024 +0200
+
+    Merge branch master
+
+commit f103568b10c221c0f703f5096a137cc96f63ffb9
+Author: marijamilevaa <marijamilevaa@gmail.com>
+Date:   Sat Apr 13 14:08:40 2024 +0200
+
+    Fix wrong condition in makeBigStringFrom
+
+commit 9a39733954fe4de4377fe02dd31fa078fa56ac4c
+Author: marijamilevaa <marijamilevaa@gmail.com>
+Date:   Sat Apr 13 14:21:31 2024 +0200
